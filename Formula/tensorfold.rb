@@ -2,14 +2,9 @@
 class Tensorfold < Formula
   desc "Native TensorFold inference server for Apple Silicon"
   homepage "https://github.com/ashhart/TensorFold"
-  url "https://github.com/ashhart/TensorFold/releases/download/v1.1.0/tensorfold-1.1.0-macos-arm64.tar.gz"
-  sha256 "99c66f56fcde07a7dd8df6ea555bcbd406d0537b7d92a453112a54bef5a72707"
+  url "https://github.com/ashhart/TensorFold/releases/download/v1.1.6/tensorfold-1.1.6-macos-arm64.tar.gz"
+  sha256 "0cd208bac9ad3f5737978b6c0bad2fb9234c0ad5cd990f9e408cc6c4bed8d808"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://ghcr.io/v2/blivioniag/tensorfold"
-    sha256 cellar: :any, arm64_tahoe: "32fb9aa6a836fe9fc08b3c28fc82279b5700fc2009dd625689afa1d5207a09c8"
-  end
 
   depends_on arch: :arm64
   depends_on macos: :ventura
